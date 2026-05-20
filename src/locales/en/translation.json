@@ -1,0 +1,271 @@
+{
+  "common": {
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "signIn": "Sign In",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "search": "Search"
+  },
+  "login": {
+    "label": "Shri Modh Visa Gowbhja Sajna",
+    "emailLabel": "Email",
+    "emailPlaceholder": "example@gmail.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "Sign In",
+    "forgotPasswordLink": "Forgot Password?",
+    "loginFailed": "Login failed. Please check your credentials and try again."
+  },
+  "forgotPassword": {
+    "title": "Forgot Password",
+    "emailLabel": "Username or Email Address",
+    "emailPlaceholder": "example@email.com",
+    "continueButton": "Continue",
+    "cancelButton": "Cancel"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "member": "Member",
+    "businessDirectory": "Business Directory",
+    "bhaktiGeet": "Bhakti Geet",
+    "contact": "Contact Us",
+    "manageUsers": "Manage Users"
+  },
+  "pages": {
+    "dashboard": {
+      "title": "Dashboard",
+      "addPersonButton": "Add Person"
+    },
+    "member": {
+      "title": "Member"
+    },
+    "businessDirectory": {
+      "title": "Business Directory"
+    },
+    "bhaktiGeet": {
+      "title": "Bhakti Geet",
+      "addSong": "Add Bhakti Geet"
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome to your Family Tree!",
+    "header": {
+      "name": "Pankaj Arvind Shah"
+    },
+    "tabs": {
+      "profile": "Profile",
+      "businessCard": "Business Card",
+      "chart": "Chart",
+      "bhaktiGeet": "Bhakti Geet",
+      "more": "More",
+      "download": "Download"
+    },
+    "profile": {
+      "title": "Profile",
+      "loading": "Loading Profile...",
+      "error": "Error",
+      "noData": "No profile data available.",
+      "sections": {
+        "familyDetails": "Family Details",
+        "spouseDetails": "Spouse Details",
+        "children": "Children",
+        "siblings": "Siblings",
+        "businessInformation": "Business Information"
+      },
+      "buttons": {
+        "editDetails": "Edit",
+        "addDetails": "Add"
+      },
+      "familyLabels": {
+        "grandfather": "Grandfather",
+        "grandmother": "Grandmother",
+        "father": "Father",
+        "mother": "Mother"
+      },
+      "childrenLabels": {
+        "elderDaughter": "Daughter",
+        "youngerDaughter": "Daughter",
+        "elderSon": "Son",
+        "youngerSon": "Son"
+      },
+      "siblingsLabels": {
+        "elderBrother": "Brother",
+        "elderSister": "Sister",
+        "youngerBrother": "Brother",
+        "youngerSister": "Sister"
+      },
+      "businessLabels": {
+        "name": "Name",
+        "address_1": "Address 1",
+        "address_2": "Address 2",
+        "email": "Email",
+        "mobile": "Mobile no.",
+        "whatsapp": "Whatsapp no.",
+        "instagram": "Instagram",
+        "facebook": "Facebook",
+        "website": "Website"
+      },
+      "personalDetails": {
+        "title": "Personal Details",
+        "editButton": "Edit Profile",
+        "photo": "Profile Photo",
+        "kutumbhNo": "Kutumbh No",
+        "pageNo": "Page No",
+        "firstName": "First Name",
+        "middleName": "Middle Name",
+        "lastName": "Last Name",
+        "surname": "Surname",
+        "gender": "Gender",
+        "dateOfBirth": "Date of Birth",
+        "placeOfBirth": "Place of Birth",
+        "gotra": "Gotra",
+        "bloodGroup": "Blood Group",
+        "dateOfMarriage": "Date of Marriage",
+        "state": "State",
+        "city": "City",
+        "pincode": "Pincode",
+        "country": "Country",
+        "residentialAddress": "Latest Residential Address",
+        "education": "Education",
+        "email": "Email Id",
+        "mobile": "Mobile no.",
+        "whatsapp": "Whatsapp no.",
+        "addPerson": "Add Person",
+        "searchPlaceholder": "Search by Name",
+        "search": "Search"
+      },
+      "spouseDetails": {
+        "fullName": "Full Name",
+        "fatherName": "Father's Name",
+        "dateOfBirth": "Date of Birth",
+        "bloodGroup": "Blood Group",
+        "gotra": "Gotra",
+        "email": "Email Id",
+        "mobile": "Mobile no.",
+        "whatsapp": "Whatsapp no.",
+        "kutumbhNo": "Kutumbh No",
+        "pageNo": "Page No"
+      },
+      "businessCard": {
+        "title": "Business Details",
+        "editButton": "Edit",
+        "addButton": "Add Business",
+        "noBusiness": "No business details available.",
+        "loading": "Loading Business Details...",
+        "websites": {
+          "title": "Websites",
+          "editButton": "Edit",
+          "instagram": "Instagram",
+          "twitter": "Twitter",
+          "facebook": "Facebook",
+          "website": "Website",
+          "noWebsites": "No website information available."
+        }
+      },
+      "editForm": {
+        "cancel": "Cancel",
+        "save": "Save Changes",
+        "saving": "Saving...",
+        "saveError": "Failed to save changes. Please try again."
+      }
+    }
+  },
+  "chart": {
+    "title": "Chart",
+    "description": "Visual representation of family tree data",
+    "ancestors": "Ancestors",
+    "descendants": "Descendants"
+  },
+  "member": {
+    "title": "Main Persons",
+    "searchPlaceholder": "Search by Name, Kutumbh No.,Page no",
+    "loading": {
+      "people": "Loading People...",
+      "more": "Loading more..."
+    },
+    "errors": {
+      "loadingPeople": "Error Loading People",
+      "noPeopleFound": "No People Found"
+    },
+    "buttons": {
+      "filter": "Filters",
+      "sortBy": "Sort by",
+      "viewProfile": "View Profile",
+      "familyChart": "Family Chart",
+      "memberDetails": "Members Profile",
+      "deletedProfiles": "Deleted Profiles"
+    },
+    "sortOrder": {
+      "ascending": "Ascending",
+      "descending": "Descending"
+    }
+  },
+  "businessDirectory": {
+    "title": "Business Directory",
+    "searchPlaceholder": "Search by Business Name, person name",
+    "loading": "Loading Business Data",
+    "noData": "No business data found.",
+    "columns": {
+      "pageNo": "Page No.",
+      "kutumbhNo": "Kutumbh No.",
+      "businessName": "Name of Business",
+      "category": "Business Category",
+      "address": "Address of Business",
+      "email": "Email",
+      "contactNo": "Contact No.",
+      "website": "Websites",
+      "instagram": "Instagram",
+      "fullName": "Full Name",
+      "facebook": "Facebook"
+    }
+  },
+  "bhaktiGeet": {
+    "title": "Bhakti Geet",
+    "AllBhaktiGeet": "All Bhakti Geet",
+    "AddSong": "Add Song",
+    "searchPlaceholder": "Search by Song Name, Artist, Album etc",
+    "loading": "Loading Bhakti Geet...",
+    "error": "Error: ",
+    "noSongs": "No songs found.",
+    "traditionalArtist": "Traditional Artist",
+    "tableColumns": {
+      "songName": "Name of the Song",
+      "artist": "Artist",
+      "album": "Album",
+      "time": "Time",
+      "dateAdded": "Date Added",
+      "delete": "Delete"
+    }
+  },
+  "verification": {
+    "title": "Verify Your Account",
+    "emailSentMessage": "We've sent an email with verification code to",
+    "codeLabel": "Enter the 6-digit Code",
+    "signInButton": "Sign In",
+    "forgotPasswordLink": "Forgot Password?"
+  },
+  "ui": {
+    "searchPlaceholder": "Search by Kutumbh No.,Page no, Name, etc",
+    "imageAlt": {
+      "flower": "flower",
+      "profile": "profile"
+    },
+    "buttonText": {
+      "filter": "Filter",
+      "sortby": "Sort By",
+      "viewAll": "View All",
+      "addBhaktiGeet": "Add Bhakti Geet",
+      "viewProfile": "View Profile",
+      "familyChart": "Family Chart"
+    },
+    "table": {
+      "SNo": "S.No"
+    }
+  },
+  "validation": {
+    "invalidEmail": "Please enter a valid email address containing @",
+    "invalidPhone": "Phone number must contain only digits, +, -, or spaces"
+  }
+}

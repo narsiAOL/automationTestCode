@@ -1,0 +1,29 @@
+@import "tailwindcss";
+/* Enhanced Card Component Styles */
+.ornamental-card {
+  @apply relative inline-block min-w-80 min-h-[150px] w-full h-full text-text-main font-serif;
+}
+
+.ornamental-card-content {
+  @apply relative z-10 flex flex-col gap-3  w-full box-border h-full;
+}
+
+.ornamental-card .label {
+  @apply text-label text-text-labels m-0;
+}
+
+.ornamental-card .content-text {
+  @apply text-input text-text-main m-0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .ornamental-card {
+    @apply min-w-80 max-w-full;
+  }
+
+  .ornamental-card-content {
+    @apply gap-2;
+    padding: 16px 20px;
+  }
+}

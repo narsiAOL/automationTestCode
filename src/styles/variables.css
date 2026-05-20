@@ -1,0 +1,278 @@
+/* variables from design system */
+:root {
+  /* Colors */
+  --text-main: #1C1811;
+  /* --text-labels: #9c6e32; */
+  --text-labels: #6B6150;
+  --text-link-light: #F5F0E6;
+  --text-link-blue: #29308f;
+  --primary-700: #4c1d00;
+  /* --primary-600: #733e0a; */
+  --primary-600: #1C1811;
+  --primary-500: #9c6e32;
+  --primary-400: #b47f3a;
+  --primary-300: #d9b869;
+  /* --primary-200: #e2c675; */
+  --primary-200: #FBF7F3;
+  --primary-100: #ffeabb;
+  --border-light: #d9b869;
+  --border-dark: #b47f3a;
+  /* --background: #F1D99F; */
+  /* --background-card : #F3DD9D; */
+  /* --background-surface-dark: #af8b38; */
+  --background: #EDE7DA;
+  --background-card : #FBF7F3;
+  --background-surface-dark: #3D2B1F;
+  --border-beige: #DAD1BC;
+  --button-brown: #8B6F47;
+  --button-brown-hover: #7a5f40;
+
+  /* Audio player colors */
+  --audio-player-bg: #DECDAD;
+  --audio-player-dark: #674A1D;
+  --audio-player-light: #F4DFBF;
+
+  /* Typography - Font Families */
+  --font-family-serif: "Noto Serif";
+  --font-family-sans: "Inter";
+
+  /* Typography - Heading 3 */
+  --heading-3-family: "Noto Serif";
+  --heading-3-weight: 700;
+  --heading-3-size: 2.25rem; /* 36px */
+  --heading-3-line-height: 2.5rem; /* 40px */
+
+  /* Typography - Heading 4 */
+  --heading-4-family: "Noto Serif";
+  --heading-4-weight: 600;
+  --heading-4-size: 2rem; /* 32px */
+  --heading-4-line-height: 2.375rem; /* 38px */
+
+  /* Typography - Heading 5 */
+  --heading-5-family: "Noto Serif";
+  --heading-5-weight: 600;
+  --heading-5-size: 1.5rem; /* 24px */
+  --heading-5-line-height: 1.875rem; /* 30px */
+
+  /* Typography - Heading 6 */
+  --heading-6-family: "Noto Serif";
+  --heading-6-weight: 600;
+  --heading-6-size: 1.25rem; /* 20px */
+  --heading-6-line-height: 1.625rem; /* 26px */
+
+  /* Typography - Button Text */
+  --button-text-family: "Inter";
+  --button-text-weight: 500;
+  --button-text-size: 0.875rem; /* 14px */
+  --button-text-line-height: 1.25rem; /* 20px */
+
+  /* Typography - Information Label */
+  --information-label-family: "Noto Serif";
+  --information-label-weight: 500;
+  --information-label-size: 1rem; /* 16px */
+  --information-label-line-height: 1.5rem; /* 24px */
+
+  /* Typography - Input */
+  --input-family: "Noto Serif";
+  --input-weight: 600;
+  --input-size: 1rem; /* 16px */
+  --input-line-height: 1.5rem; /* 24px */
+
+  /* Typography - Badge Text */
+  --badge-text-family: "Noto Serif";
+  --badge-text-weight: 600;
+  --badge-text-size: 0.875rem; /* 14px */
+  --badge-text-line-height: 1rem; /* 16px */
+
+  /* Typography - Placeholder */
+  --placeholder-family: "Inter";
+  --placeholder-weight: 400;
+  --placeholder-size: 0.875rem; /* 14px */
+  --placeholder-line-height: 1.25rem; /* 20px */
+
+  /* Typography - Body 1 */
+  --body-1-family: "Noto Serif";
+  --body-1-weight: 500;
+  --body-1-size: 1rem; /* 16px */
+  --body-1-line-height: 1.5rem; /* 24px */
+
+  /* Typography - Body 2 */
+  --body-2-family: "Noto Serif";
+  --body-2-weight: 600;
+  --body-2-size: 1rem; /* 16px */
+  --body-2-line-height: 1.5rem; /* 24px */
+
+  /* Typography - Button Large */
+  --button-large-family: "Inter";
+  --button-large-weight: 500;
+  --button-large-size: 1rem; /* 16px */
+  --button-large-line-height: 1.5rem; /* 24px */
+
+  /* Typography - Button Small */
+  --button-small-family: "Inter";
+  --button-small-weight: 400;
+  --button-small-size: 0.75rem; /* 12px */
+  --button-small-line-height: 1rem; /* 16px */
+
+  /* Typography - Link Button */
+  --link-button-family: "Inter";
+  --link-button-weight: 500;
+  --link-button-size: 1rem; /* 16px */
+  --link-button-line-height: 1.25rem; /* 20px */
+
+  /* Gradients (values need to be defined in your design system) */
+  --gradient-bg: var(
+    --gradients-bg-gradient,
+    linear-gradient(180deg, transparent 0%, transparent 100%)
+  );
+  --gradient-green: var(
+    --gradients-green-gradient,
+    linear-gradient(180deg, transparent 0%, transparent 100%)
+  );
+  --gradient-dark-brown: linear-gradient(
+    179deg,
+    var(--color-primary-400) 6.28%,
+    var(--color-primary-600) 43.38%,
+    #8c5b2a 99.55%
+  );
+  --gradient-golden-1: var(
+    --gradients-golden-gradient-1,
+    linear-gradient(180deg, transparent 0%, transparent 100%)
+  );
+  --gradient-blue: var(
+    --gradients-blue-gradient,
+    linear-gradient(180deg, transparent 0%, transparent 100%)
+  );
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+  /* Colors - Dark Theme */
+  --text-main: #ffeabb; /* Light text for dark background */
+  --text-labels: #e2c675; /* Lighter labels */
+  --text-link-light: #d9b869; /* Adjusted link color */
+  --text-link-blue: #5a6bc7; /* Lighter blue for dark background */
+  --primary-700: #ffeabb; /* Inverted - lightest becomes darkest priority */
+  --primary-600: #e2c675;
+  --primary-500: #d9b869;
+  --primary-400: #b47f3a;
+  --primary-300: #9c6e32;
+  --primary-200: #733e0a;
+  --primary-100: #4c1d00; /* Inverted - darkest becomes lightest priority */
+  --border-light: #9c6e32; /* Darker borders for dark theme */
+  --border-dark: #733e0a;
+  --background: #2d1a08; /* Dark brown background */
+  --background-surface-dark: #1a0f04; /* Even darker surface */
+
+  /* Typography - Font Families (same for dark) */
+  --font-family-serif: "Noto Serif";
+  --font-family-sans: "Inter";
+
+  /* Typography - Heading 3 (same for dark) */
+  --heading-3-family: "Noto Serif";
+  --heading-3-weight: 700;
+  --heading-3-size: 2.25rem; /* 36px */
+  --heading-3-line-height: 2.5rem; /* 40px */
+
+  /* Typography - Heading 4 (same for dark) */
+  --heading-4-family: "Noto Serif";
+  --heading-4-weight: 600;
+  --heading-4-size: 2rem; /* 32px */
+  --heading-4-line-height: 2.375rem; /* 38px */
+
+  /* Typography - Heading 5 (same for dark) */
+  --heading-5-family: "Noto Serif";
+  --heading-5-weight: 600;
+  --heading-5-size: 1.5rem; /* 24px */
+  --heading-5-line-height: 1.875rem; /* 30px */
+
+  /* Typography - Heading 6 (same for dark) */
+  --heading-6-family: "Noto Serif";
+  --heading-6-weight: 600;
+  --heading-6-size: 1.25rem; /* 20px */
+  --heading-6-line-height: 1.625rem; /* 26px */
+
+  /* Typography - Button Text (same for dark) */
+  --button-text-family: "Inter";
+  --button-text-weight: 500;
+  --button-text-size: 0.875rem; /* 14px */
+  --button-text-line-height: 1.25rem; /* 20px */
+
+  /* Typography - Information Label (same for dark) */
+  --information-label-family: "Noto Serif";
+  --information-label-weight: 500;
+  --information-label-size: 1rem; /* 16px */
+  --information-label-line-height: 1.5rem; /* 24px */
+
+  /* Typography - Input (same for dark) */
+  --input-family: "Noto Serif";
+  --input-weight: 600;
+  --input-size: 1rem; /* 16px */
+  --input-line-height: 1.5rem; /* 24px */
+
+  /* Typography - Badge Text (same for dark) */
+  --badge-text-family: "Noto Serif";
+  --badge-text-weight: 600;
+  --badge-text-size: 0.875rem; /* 14px */
+  --badge-text-line-height: 1rem; /* 16px */
+
+  /* Typography - Placeholder (same for dark) */
+  --placeholder-family: "Inter";
+  --placeholder-weight: 400;
+  --placeholder-size: 0.875rem; /* 14px */
+  --placeholder-line-height: 1.25rem; /* 20px */
+
+  /* Typography - Body 1 (same for dark) */
+  --body-1-family: "Noto Serif";
+  --body-1-weight: 500;
+  --body-1-size: 1rem; /* 16px */
+  --body-1-line-height: 1.5rem; /* 24px */
+
+  /* Typography - Body 2 (same for dark) */
+  --body-2-family: "Noto Serif";
+  --body-2-weight: 600;
+  --body-2-size: 1rem; /* 16px */
+  --body-2-line-height: 1.5rem; /* 24px */
+
+  /* Typography - Button Large (same for dark) */
+  --button-large-family: "Inter";
+  --button-large-weight: 500;
+  --button-large-size: 1rem; /* 16px */
+  --button-large-line-height: 1.5rem; /* 24px */
+
+  /* Typography - Button Small (same for dark) */
+  --button-small-family: "Inter";
+  --button-small-weight: 400;
+  --button-small-size: 0.75rem; /* 12px */
+  --button-small-line-height: 1rem; /* 16px */
+
+  /* Typography - Link Button (same for dark) */
+  --link-button-family: "Inter";
+  --link-button-weight: 500;
+  --link-button-size: 1rem; /* 16px */
+  --link-button-line-height: 1.25rem; /* 20px */
+
+  /* Gradients - Dark Theme (same values for now) */
+  --gradient-bg: var(
+    --gradients-bg-gradient,
+    linear-gradient(180deg, transparent 0%, transparent 100%)
+  );
+  --gradient-green: var(
+    --gradients-green-gradient,
+    linear-gradient(180deg, transparent 0%, transparent 100%)
+  );
+  --gradient-dark-brown: linear-gradient(
+    179deg,
+    var(--color-primary-400) 6.28%,
+    var(--color-primary-600) 43.38%,
+    #8c5b2a 99.55%
+  );
+  --gradient-golden-1: var(
+    --gradients-golden-gradient-1,
+    linear-gradient(180deg, transparent 0%, transparent 100%)
+  );
+  --gradient-blue: var(
+    --gradients-blue-gradient,
+    linear-gradient(180deg, transparent 0%, transparent 100%)
+  );
+}

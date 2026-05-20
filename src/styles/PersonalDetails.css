@@ -1,0 +1,27 @@
+/* Import Geist font */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap');
+
+/* Apply Geist and new font color to the card */
+.personal-details-card {
+  font-family: 'Geist', sans-serif;
+  color: #6B6150; /* sets the default text color for all children */
+}
+
+/* Labels - semi-bold */
+.personal-details-card .text-label {
+  font-weight: 600;
+  color: #6B6150; /* override text-label color */
+}
+
+/* Values - regular */
+.personal-details-card .text-input {
+  font-weight: 400;
+  color: #6B6150; /* override text-main color */
+}
+
+/* Headings (optional) */
+.personal-details-card .text-heading-6 {
+  font-family: 'Geist', sans-serif;
+  font-weight: 600;
+  color: #6B6150;
+}

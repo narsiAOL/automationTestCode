@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+/* CONTAINER & CARD */
+
+.personal-details-container {
+  @apply w-full lg:max-w-full xl:max-w-7xl 2xl:max-w-7xl mx-auto mt-6;
+}
+
+.personal-details-card {
+  @apply w-full p-4 lg:p-6;
+}
+
+/* INNER LAYOUT (image + content) */
+
+.personal-details-inner {
+  @apply flex flex-col lg:flex-row gap-[30px] w-full items-stretch;
+}
+
+/* PROFILE IMAGE COLUMN */
+
+.personal-details-profile {
+  @apply flex-shrink-0;
+  width: 30%;
+}
+
+.personal-details-profile > div {
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: unset !important;
+  min-height: 280px;
+  min-width: 285px;
+}
+
+.personal-details-profile img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* CONTENT COLUMN */
+
+.personal-details-content {
+  @apply flex-1 min-w-0 w-full;
+}
+
+/* DETAIL ITEM LAYOUT */
+
+.personal-details-item {
+  @apply flex items-start gap-3 w-full;
+}
+
+.personal-details-label {
+  @apply text-label text-text-labels flex-shrink-0;
+  min-width: 8rem;
+}
+
+.personal-details-separator {
+  @apply text-label text-text-labels opacity-70 flex-shrink-0;
+}
+
+.personal-details-value {
+  @apply text-input text-text-main flex-1 break-words;
+}
+
+/* RESPONSIVE — TABLET (max 1023px) */
+
+@media (max-width: 1023px) {
+  .personal-details-inner {
+    @apply items-start;
+  }
+
+  .personal-details-profile {
+    width: 100%;
+    max-width: 180px;
+    min-height: unset;
+  }
+
+  .personal-details-profile > div {
+    aspect-ratio: 372 / 486 !important;
+    height: auto !important;
+    min-height: unset !important;
+  }
+}
+
+/* RESPONSIVE — DESKTOP IMAGE (min 1024px)*/
+
+@media (min-width: 1024px) {
+  .personal-details-profile > div {
+    min-width: 330px;
+  }
+}
+
+/*  RESPONSIVE — MOBILE (max 640px)*/
+
+@media (max-width: 640px) {
+  .personal-details-label {
+    min-width: 6rem;
+    font-size: 0.875rem;
+  }
+
+  .personal-details-value {
+    font-size: 0.875rem;
+  }
+
+  .personal-details-item {
+    @apply gap-2;
+  }
+}
+
+/*  RESPONSIVE — SMALL MOBILE (max 480px) */
+
+@media (max-width: 480px) {
+  .personal-details-item {
+    @apply flex-col gap-1;
+  }
+
+  .personal-details-label {
+    min-width: auto;
+  }
+
+  .personal-details-separator {
+    @apply hidden;
+  }
+}

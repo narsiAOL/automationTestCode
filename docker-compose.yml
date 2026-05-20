@@ -1,0 +1,10 @@
+services:
+  react-app:
+    build: .
+
+    container_name: react-frontend
+
+    restart: always
+
+    ports:
+      - "5549:5549"

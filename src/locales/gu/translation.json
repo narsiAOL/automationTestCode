@@ -1,0 +1,247 @@
+{
+  "common": {
+    "cancel": "રદ કરો",
+    "continue": "ચાલુ રાખો",
+    "signIn": "સાઇન ઇન",
+    "email": "ઇમેઇલ",
+    "password": "પાસવર્ડ",
+    "forgotPassword": "પાસવર્ડ ભૂલી ગયા?",
+    "search": "શોધો"
+  },
+  "login": {
+    "welcomeBack": "પાછા સ્વાગત છે",
+    "emailLabel": "ઇમેઇલ",
+    "emailPlaceholder": "example@gmail.com",
+    "passwordLabel": "પાસવર્ડ",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "સાઇન ઇન",
+    "forgotPasswordLink": "પાસવર્ડ ભૂલી ગયા?"
+  },
+  "forgotPassword": {
+    "title": "પાસવર્ડ ભૂલી ગયા",
+    "emailLabel": "વપરાશકર્તા નામ અથવા ઇમેઇલ સરનામું",
+    "emailPlaceholder": "example@email.com",
+    "continueButton": "ચાલુ રાખો",
+    "cancelButton": "રદ કરો"
+  },
+  "navigation": {
+    "dashboard": "ડૅશબોર્ડ",
+    "member": "સભ્ય",
+    "businessDirectory": "વ્યાપાર નિર્દેશિકા",
+    "bhaktiGeet": "ભક્તિ ગીત",
+    "contact": "અમારો સંપર્ક કરો",
+    "manageUsers": "વપરાશકર્તાઓનું प्रबंधन करें"
+  },
+  "pages": {
+    "dashboard": {
+      "title": "ડૅશબોર્ડ"
+    },
+    "member": {
+      "title": "સભ્ય"
+    },
+    "businessDirectory": {
+      "title": "વ્યાપાર નિર્દેશિકા"
+    },
+    "bhaktiGeet": {
+      "title": "ભક્તિ ગીત"
+    }
+  },
+  "dashboard": {
+    "welcome": "તમારા કુટુંબ વૃક્ષમાં આપનું સ્વાગત છે!",
+    "header": {
+      "name": "પંકજ અરવિંદ શાહ"
+    },
+    "tabs": {
+      "profile": "પ્રોફાઇલ",
+      "businessCard": "વ્યાપાર કાર્ડ",
+      "chart": "ચાર્ટ",
+      "bhaktiGeet": "ભક્તિ ગીત",
+      "more": "વધુ",
+      "download": "ડાઉનલોડ"
+    },
+    "profile": {
+      "title": "પ્રોફાઇલ",
+      "loading": "પ્રોફાઇલ લોડ થઈ રહ્યો છે...",
+      "error": "ભૂલ",
+      "noData": "કોઈ પ્રોફાઇલ ડેટા ઉપલબ્ધ નથી.",
+      "sections": {
+        "familyDetails": "કૌટુંબિક વિગતો",
+        "spouseDetails": "જીવનસાથી વિગતો",
+        "children": "બાળકો",
+        "siblings": "ભાઈ-બહેનો",
+        "businessInformation": "વ્યાપારિક માહિતી"
+      },
+      "buttons": {
+        "editDetails": "વિગતો સંપાદિત કરો"
+      },
+      "familyLabels": {
+        "grandfather": "દાદાજી",
+        "grandmother": "દાદીમા",
+        "father": "પિતા",
+        "mother": "માતા"
+      },
+      "childrenLabels": {
+        "elderDaughter": "મોટી દીકરી",
+        "elderSon": "મોટો દીકરો",
+        "youngerSon": "નાનો દીકરો"
+      },
+      "siblingsLabels": {
+        "elderBrother": "મોટો ભાઈ",
+        "elderSister": "મોટી બહેન",
+        "youngerBrother": "નાનો ભાઈ"
+      },
+      "businessLabels": {
+        "name": "નામ",
+        "address": "સરનામું",
+        "email": "ઇમેઇલ",
+        "mobile": "મોબાઇલ નંબર",
+        "whatsapp": "વોટ્સએપ નંબર"
+      },
+      "personalDetails": {
+        "title": "વ્યક્તિગત વિગતો",
+        "editButton": "પ્રોફાઇલ સંપાદિત કરો",
+        "photo": "પ્રોફાઇલ ફોટો",
+        "kutumbhNo": "કુટુંભ નંબર",
+        "pageNo": "પેજ નંબર",
+        "firstName": "પ્રથમ નામ",
+        "middleName": "મધ્ય નામ",
+        "lastName": "અંતિમ નામ",
+        "surname": "અટક",
+        "gender": "લિંગ",
+        "dateOfBirth": "જન્મ તારીખ",
+        "placeOfBirth": "જન્મ સ્થળ",
+        "gotra": "ગોત્ર",
+        "bloodGroup": "બ્લડ ગ્રુપ",
+        "dateOfMarriage": "લગ્નની તારીખ",
+        "state": "રાજ્ય",
+        "city": "શહેર",
+        "pincode": "પિનકોડ",
+        "country": "દેશ",
+        "residentialAddress": "તાજેતરનું રહેઠાણનું સરનામું",
+        "education": "શિક્ષણ",
+        "email": "ઇમેઇલ આઇડી",
+        "mobile": "મોબાઇલ નંબર",
+        "whatsapp": "વોટ્સએપ નંબર"
+      },
+      "spouseDetails": {
+        "fullName": "પૂરું નામ",
+        "fatherName": "પિતાનું નામ",
+        "dateOfBirth": "જન્મ તારીખ",
+        "bloodGroup": "બ્લડ ગ્રુપ",
+        "gotra": "ગોત્ર",
+        "email": "ઇમેઇલ આઇડી",
+        "mobile": "મોબાઇલ નંબર",
+        "whatsapp": "વોટ્સએપ નંબર",
+        "kutumbhNo": "કુટુંભ નંબર",
+        "pageNo": "પેજ નંબર"
+      },
+      "businessCard": {
+        "title": "વ્યાપારિક વિગતો",
+        "editButton": "પ્રોફાઇલ સંપાદિત કરો",
+        "noBusiness": "કોઈ વ્યાપાર વિગતો ઉપલબ્ધ નથી.",
+        "loading": "વ્યાપાર વિગતો લોડ થઈ રહી છે...",
+        "websites": {
+          "title": "વેબસાઇટ્સ",
+          "editButton": "વિગતો સંપાદિત કરો",
+          "instagram": "ઇન્સ્ટાગ્રામ",
+          "twitter": "ટ્વિટર",
+          "facebook": "ફેસબુક",
+          "website": "વેબસાઇટ",
+          "noWebsites": "કોઈ વેબસાઇટ માહિતી ઉપલબ્ધ નથી."
+        }
+      },
+      "editForm": {
+        "cancel": "રદ કરો",
+        "save": "ફેરફારો સેવ કરો",
+        "saving": "સેવ કરાઈ રહ્યું છે...",
+        "saveError": "ફેરફારો સેવ કરવામાં નિષ્ફળ. કૃપા કરીને ફરીથી પ્રયાસ કરો."
+      }
+    }
+  },
+  "chart": {
+    "title": "ચાર્ટ",
+    "description": "કૌટુંબિક વૃક્ષ ડેટાનું દૃશ્ય પ્રતિનિધિત્વ",
+    "ancestors": "પૂર્વજ",
+    "descendants": "વંશજ"
+  },
+  "member": {
+    "title": "બધા સભ્યો",
+    "searchPlaceholder": "કુટુંભ નં., પેજ નં., નામ વગેરે દ્વારા શોધો",
+    "loading": {
+      "people": "લોકો લોડ થઈ રહ્યા છે...",
+      "more": "વધુ લોડ થઈ રહ્યું છે..."
+    },
+    "errors": {
+      "loadingPeople": "લોકો લોડ કરવામાં ભૂલ",
+      "noPeopleFound": "કોઈ લોકો મળ્યા નથી"
+    },
+    "buttons": {
+      "filter": "ફિલ્ટર",
+      "sortBy": "આના દ્વારા ક્રમાંક આપો",
+      "viewProfile": "પ્રોફાઇલ જુઓ",
+      "familyChart": "કુટુંબ ચાર્ટ"
+    },
+    "sortOrder": {
+      "ascending": "ચડતા ક્રમમાં",
+      "descending": "ઊતરતા ક્રમમાં"
+    }
+  },
+  "businessDirectory": {
+    "title": "વ્યાપાર નિર્દેશિકા",
+    "searchPlaceholder": "વ્યાપારના નામ, કેટેગરી, પેજ નંબર વગેરે દ્વારા શોધો",
+    "loading": "વ્યાપાર ડેટા લોડ થઈ રહ્યો છે",
+    "noData": "કોઈ વ્યાપાર ડેટા મળ્યો નથી.",
+    "columns": {
+      "pageNo": "પેજ નંબર",
+      "kutumbhNo": "કુટુંભ નંબર",
+      "businessName": "વ્યાપારનું નામ",
+      "category": "વ્યાપાર કેટેગરી",
+      "address": "સરનામું",
+      "email": "ઇમેઇલ",
+      "contactNo": "સંપર્ક નંબર",
+      "website": "વેબસાઇટ",
+      "instagram": "ઇન્સ્ટાગ્રામ"
+    }
+  },
+  "bhaktiGeet": {
+    "title": "ભક્તિ ગીત",
+    "AllBhaktiGeet": "બધા ભક્તિ ગીત",
+    "searchPlaceholder": "ગીતના નામ, કલાકાર, આલ્બમ વગેરે દ્વારા શોધો",
+    "loading": "ભક્તિ ગીત લોડ થઈ રહ્યા છે...",
+    "error": "ભૂલ: ",
+    "noSongs": "કોઈ ગીતો મળ્યા નથી.",
+    "traditionalArtist": "પરંપરાગત કલાકાર",
+    "tableColumns": {
+      "songName": "ગીતનું નામ",
+      "artist": "કલાકાર",
+      "album": "આલ્બમ",
+      "time": "સમય",
+      "dateAdded": "ઉમેરવાની તારીખ"
+    }
+  },
+  "verification": {
+    "title": "તમારા એકાઉન્ટની પુષ્ટિ કરો",
+    "emailSentMessage": "અમે વેરિફિકેશન કોડ સાથે એક ઇમેઇલ મોકલ્યો છે",
+    "codeLabel": "6-અંકનો કોડ દાખલ કરો",
+    "signInButton": "સાઇન ઇન",
+    "forgotPasswordLink": "પાસવર્ડ ભૂલી ગયા?"
+  },
+  "ui": {
+    "searchPlaceholder": "કુટુંભ નંબર, પેજ નંબર, નામ વગેરે દ્વારા શોધો",
+    "imageAlt": {
+      "flower": "ફૂલ",
+      "profile": "પ્રોફાઇલ"
+    },
+    "buttonText": {
+      "filter": "ફિલ્ટર",
+      "sortby": "દ્વારા સૉર્ટ કરો",
+      "viewAll": "બધા જુઓ",
+      "addBhaktiGeet": "ભક્તિ ગીત ઉમેરો",
+      "viewProfile": "પ્રોફાઇલ જુઓ",
+      "familyChart": "કુટુંબ ચાર્ટ"
+    },
+    "table": {
+      "SNo": "ક્રમાંક"
+    }
+  }
+}

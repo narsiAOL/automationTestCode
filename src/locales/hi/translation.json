@@ -1,0 +1,247 @@
+{
+  "common": {
+    "cancel": "रद्द करें",
+    "continue": "जारी रखें",
+    "signIn": "साइन इन",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "forgotPassword": "पासवर्ड भूल गए?",
+    "search": "खोजें"
+  },
+  "login": {
+    "welcomeBack": "वापस स्वागत है",
+    "emailLabel": "ईमेल",
+    "emailPlaceholder": "example@gmail.com",
+    "passwordLabel": "पासवर्ड",
+    "passwordPlaceholder": "••••••••",
+    "signInButton": "साइन इन",
+    "forgotPasswordLink": "पासवर्ड भूल गए?"
+  },
+  "forgotPassword": {
+    "title": "पासवर्ड भूल गए",
+    "emailLabel": "उपयोगकर्ता नाम या ईमेल पता",
+    "emailPlaceholder": "example@email.com",
+    "continueButton": "जारी रखें",
+    "cancelButton": "रद्द करें"
+  },
+  "navigation": {
+    "dashboard": "डैशबोर्ड",
+    "member": "सदस्य",
+    "businessDirectory": "व्यापार निर्देशिका",
+    "bhaktiGeet": "भक्ति गीत",
+    "contact": "हमसे संपर्क करें",
+    "manageUsers": "उपयोगकर्ताओं का प्रबंधन करें"
+  },
+  "pages": {
+    "dashboard": {
+      "title": "डैशबोर्ड"
+    },
+    "member": {
+      "title": "सदस्य"
+    },
+    "businessDirectory": {
+      "title": "व्यापार निर्देशिका"
+    },
+    "bhaktiGeet": {
+      "title": "भक्ति गीत"
+    }
+  },
+  "dashboard": {
+    "welcome": "आपके परिवार वृक्ष में आपका स्वागत है!",
+    "header": {
+      "name": "पंकज अरविंद शाह"
+    },
+    "tabs": {
+      "profile": "प्रोफाइल",
+      "businessCard": "व्यापार कार्ड",
+      "chart": "चार्ट",
+      "bhaktiGeet": "भक्ति गीत",
+      "more": "और अधिक",
+      "download": "डाउनलोड"
+    },
+    "profile": {
+      "title": "प्रोफाइल",
+      "loading": "प्रोफाइल लोड हो रहा है...",
+      "error": "त्रुटि",
+      "noData": "कोई प्रोफाइल डेटा उपलब्ध नहीं है।",
+      "sections": {
+        "familyDetails": "पारिवारिक विवरण",
+        "spouseDetails": "जीवनसाथी विवरण",
+        "children": "बच्चे",
+        "siblings": "भाई-बहन",
+        "businessInformation": "व्यापारिक जानकारी"
+      },
+      "buttons": {
+        "editDetails": "विवरण संपादित करें"
+      },
+      "familyLabels": {
+        "grandfather": "दादाजी",
+        "grandmother": "दादीजी",
+        "father": "पिता",
+        "mother": "माता"
+      },
+      "childrenLabels": {
+        "elderDaughter": "बड़ी बेटी",
+        "elderSon": "बड़ा बेटा",
+        "youngerSon": "छोटा बेटा"
+      },
+      "siblingsLabels": {
+        "elderBrother": "बड़ा भाई",
+        "elderSister": "बड़ी बहन",
+        "youngerBrother": "छोटा भाई"
+      },
+      "businessLabels": {
+        "name": "नाम",
+        "address": "पता",
+        "email": "ईमेल",
+        "mobile": "मोबाइल नंबर",
+        "whatsapp": "व्हाट्सएप नंबर"
+      },
+      "personalDetails": {
+        "title": "व्यक्तिगत विवरण",
+        "editButton": "प्रोफ़ाइल संपादित करें",
+        "photo": "प्रोफ़ाइल फ़ोटो",
+        "kutumbhNo": "कुटुम्भ नंबर",
+        "pageNo": "पेज नंबर",
+        "firstName": "प्रथम नाम",
+        "lastName": "अंतिम नाम",
+        "middleName": "मध्य नाम",
+        "surname": "उपनाम",
+        "gender": "लिंग",
+        "dateOfBirth": "जन्म तिथि",
+        "placeOfBirth": "जन्म स्थान",
+        "gotra": "गोत्र",
+        "bloodGroup": "रक्त समूह",
+        "dateOfMarriage": "विवाह की तारीख",
+        "state": "राज्य",
+        "city": "शहर",
+        "pincode": "पिनकोड",
+        "country": "देश",
+        "residentialAddress": "नवीनतम आवासीय पता",
+        "education": "शिक्षा",
+        "email": "ईमेल आईडी",
+        "mobile": "मोबाइल नंबर",
+        "whatsapp": "व्हाट्सएप नंबर"
+      },
+      "spouseDetails": {
+        "fullName": "पूरा नाम",
+        "fatherName": "पिता का नाम",
+        "dateOfBirth": "जन्म तिथि",
+        "bloodGroup": "रक्त समूह",
+        "gotra": "गोत्र",
+        "email": "ईमेल आईडी",
+        "mobile": "मोबाइल नंबर",
+        "whatsapp": "व्हाट्सएप नंबर",
+        "kutumbhNo": "कुटुम्भ नंबर",
+        "pageNo": "पेज नंबर"
+      },
+      "businessCard": {
+        "title": "व्यापारिक विवरण",
+        "editButton": "प्रोफ़ाइल संपादित करें",
+        "noBusiness": "कोई व्यापार विवरण उपलब्ध नहीं है।",
+        "loading": "व्यापार विवरण लोड हो रहा है...",
+        "websites": {
+          "title": "वेबसाइटें",
+          "editButton": "विवरण संपादित करें",
+          "instagram": "इंस्टाग्राम",
+          "twitter": "ट्विटर",
+          "facebook": "फेसबुक",
+          "website": "वेबसाइट",
+          "noWebsites": "कोई वेबसाइट जानकारी उपलब्ध नहीं है।"
+        }
+      },
+      "editForm": {
+        "cancel": "रद्द करें",
+        "save": "परिवर्तन सहेजें",
+        "saving": "सहेजा जा रहा है...",
+        "saveError": "परिवर्तन सहेजने में विफल। कृपया पुनः प्रयास करें।"
+      }
+    }
+  },
+  "chart": {
+    "title": "चार्ट",
+    "description": "पारिवारिक वृक्ष डेटा का दृश्य प्रतिनिधित्व",
+    "ancestors": "पूर्वज",
+    "descendants": "वंशज"
+  },
+  "member": {
+    "title": "सभी सदस्य",
+    "searchPlaceholder": "कुटुंभ नं., पेज नं., नाम आदि से खोजें",
+    "loading": {
+      "people": "लोग लोड हो रहे हैं...",
+      "more": "और लोड हो रहा है..."
+    },
+    "errors": {
+      "loadingPeople": "लोग लोड करने में त्रुटि",
+      "noPeopleFound": "कोई लोग नहीं मिले"
+    },
+    "buttons": {
+      "filter": "फ़िल्टर",
+      "sortBy": "इसके द्वारा क्रमबद्ध करें",
+      "viewProfile": "प्रोफ़ाइल देखें",
+      "familyChart": "पारिवारिक चार्ट"
+    },
+    "sortOrder": {
+      "ascending": "आरोही क्रम",
+      "descending": "अवरोही क्रम"
+    }
+  },
+  "businessDirectory": {
+    "title": "व्यापार निर्देशिका",
+    "searchPlaceholder": "व्यापार के नाम, श्रेणी, पेज नंबर आदि से खोजें",
+    "loading": "व्यापार डेटा लोड हो रहा है",
+    "noData": "कोई व्यापार डेटा नहीं मिला।",
+    "columns": {
+      "pageNo": "पेज नंबर",
+      "kutumbhNo": "कुटुम्भ नंबर",
+      "businessName": "व्यापार का नाम",
+      "category": "व्यापार श्रेणी",
+      "address": "पता",
+      "email": "ईमेल",
+      "contactNo": "संपर्क नंबर",
+      "website": "वेबसाइट",
+      "instagram": "इंस्टाग्राम"
+    }
+  },
+  "bhaktiGeet": {
+    "title": "भक्ति गीत",
+    "AllBhaktiGeet": "सभी भक्ति गीत",
+    "searchPlaceholder": "गीत के नाम, कलाकार, एल्बम आदि से खोजें",
+    "loading": "भक्ति गीत लोड हो रहे हैं...",
+    "error": "त्रुटि: ",
+    "noSongs": "कोई गीत नहीं मिले।",
+    "traditionalArtist": "पारंपरिक कलाकार",
+    "tableColumns": {
+      "songName": "गीत का नाम",
+      "artist": "कलाकार",
+      "album": "एल्बम",
+      "time": "समय",
+      "dateAdded": "जोड़ने की तारीख"
+    }
+  },
+  "verification": {
+    "title": "अपने खाते की पुष्टि करें",
+    "emailSentMessage": "हमने वेरिफिकेशन कोड के साथ एक ईमेल भेजा है",
+    "codeLabel": "6-अंकों का कोड दर्ज करें",
+    "signInButton": "साइन इन",
+    "forgotPasswordLink": "पासवर्ड भूल गए?"
+  },
+  "ui": {
+    "searchPlaceholder": "कुटुम्भ नंबर, पेज नंबर, नाम आदि से खोजें",
+    "imageAlt": {
+      "flower": "फूल",
+      "profile": "प्रोफ़ाइल"
+    },
+    "buttonText": {
+      "filter": "फ़िल्टर",
+      "sortby": "द्वारा सॉर्ट करें",
+      "viewAll": "सभी देखें",
+      "addBhaktiGeet": "भक्ति गीत जोड़ें",
+      "viewProfile": "प्रोफ़ाइल देखें",
+      "familyChart": "पारिवारिक चार्ट"
+    },
+    "table": {
+      "SNo": "क्रमांक"
+    }
+  }
+}

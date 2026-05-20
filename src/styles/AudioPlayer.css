@@ -1,0 +1,265 @@
+/* Global Audio Player Styles */
+.global-audio-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 110px;
+  background: var(--audio-player-bg);
+  border-top: 1px solid var(--audio-player-dark);
+  padding: 0;
+  margin: 0;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 640px) {
+  .global-audio-player {
+    height: 140px;
+    overflow: visible;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  .global-audio-player {
+    height: 120px;
+    overflow: visible;
+  }
+}
+
+@media (min-width: 1024px) {
+  .global-audio-player {
+    height: 110px;
+    overflow: hidden;
+  }
+}
+
+.audio-control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 0;
+  padding: 4px;
+  flex-shrink: 0;
+  touch-action: manipulation;
+}
+
+.audio-control-btn:hover {
+  transform: scale(1.05);
+}
+
+.audio-control-btn:active {
+  transform: scale(0.95);
+}
+
+.audio-control-btn:focus {
+  outline: 2px solid rgba(103, 74, 29, 0.4);
+  outline-offset: 2px;
+}
+
+/* Small Control Buttons - Flat style */
+.audio-control-small {
+  width: 36px;
+  height: 36px;
+  color: var(--audio-player-dark);
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+@media (max-width: 640px) {
+  .audio-control-small {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+  }
+}
+
+.audio-control-small:hover,
+.audio-control-small.active {
+  color: var(--audio-player-dark);
+  background: rgba(103, 74, 29, 0.1);
+  opacity: 0.8;
+}
+
+/* Large Control Button - Play/Pause Circle */
+.audio-control-large {
+  width: 44px;
+  height: 44px;
+  color: #fff;
+  background: var(--audio-player-dark);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  padding: 6px;
+}
+
+@media (max-width: 640px) {
+  .audio-control-large {
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+  }
+}
+
+.audio-control-large:hover {
+  background: #5b3e19;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.audio-control-large:active {
+  background: #4a2f15;
+}
+
+.audio-control-large.active {
+  background: #5b3e19;
+  color: #fff;
+}
+
+.audio-progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: rgba(103, 74, 29, 0.25);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.audio-progress-fill {
+  height: 100%;
+  background-color: #674A1D;
+  border-radius: 4px;
+  transition: width 0.1s ease-out;
+}
+
+/* Progress bar thumb styles */
+.progress-bar-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex: 1;
+  touch-action: manipulation;
+}
+
+.progress-bar-track,
+.volume-bar-track {
+  position: relative;
+  height: 6px;
+  background-color: #fff;
+  opacity: 1;
+  border-radius: 3px;
+  overflow: visible;
+  border: 1px solid rgba(103, 74, 29, 0.25);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+@media (max-width: 640px) {
+  .progress-bar-track,
+  .volume-bar-track {
+    height: 8px;
+  }
+}
+
+.progress-bar-fill,
+.volume-bar-fill {
+  height: 100%;
+  background-color: #674A1D !important;
+  border-radius: 3px;
+  position: relative;
+  transition: width 0.1s ease;
+}
+
+.progress-bar-thumb {
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: var(--audio-player-dark);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 640px) {
+  .progress-bar-thumb {
+    width: 14px;
+    height: 14px;
+    right: -7px;
+  }
+}
+
+/* Show thumb on hover or when dragging */
+.progress-bar-container:hover .progress-bar-thumb,
+.progress-bar-container.dragging .progress-bar-thumb {
+  opacity: 1;
+}
+
+/* Mobile specific progress bar adjustments */
+@media (max-width: 1023px) {
+  .progress-bar-track {
+    height: 6px;
+  }
+
+  .progress-bar-thumb {
+    width: 16px;
+    height: 16px;
+    right: -8px;
+    opacity: 1;
+  }
+}
+
+/* Hide default audio player controls */
+.rhap_container {
+  display: none !important;
+}
+
+/* Ensure main content doesn't overlap with fixed player */
+.main-content-with-player {
+  padding-bottom: 140px;
+}
+
+@media (min-width: 641px) {
+  .main-content-with-player {
+    padding-bottom: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content-with-player {
+    padding-bottom: 110px;
+  }
+}
+
+/* Additional utilities for audio player */
+.leading-6\.5 {
+  line-height: 1.625rem;
+}
+
+.leading-0 {
+  line-height: 0;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+/* Responsive text sizing helpers */
+@media (max-width: 640px) {
+  .responsive-text-sm {
+    font-size: 0.75rem;
+  }
+
+  .responsive-text-base {
+    font-size: 0.875rem;
+  }
+}

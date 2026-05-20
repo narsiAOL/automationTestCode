@@ -1,0 +1,14 @@
+export { default as PersonalDetailsForm } from "./_profile/PersonalDetailsForm";
+export { default as ProfileTab } from "./ProfileTab";
+export { default as BusinessCardTab } from "./BusinessCardTab";
+export { default as ChartTab } from "./ChartTab";
+export { default as BhaktiGeetTab } from "./BhaktiGeetTab";
+export { default as MoreTab } from "./MoreTab";
+export { default as DetailItem } from "./DetailItem";
+export { default as DetailSection } from "./DetailSection";
+export { default as FamilyDetailsCard } from "./_profile/FamilyDetailsCard";
+export { default as SpouseDetailsCard } from "./_profile/SpouseDetailsCard";
+export { default as ChildrenDetailsCard } from "./_profile/ChildrenDetailsCard";
+export { default as SiblingsDetailsCard } from "./_profile/SiblingDetailsCard";
+export { default as BusinessInformationCard } from "./_profile/BusinessInformationCard";
+export { default as AdsCard } from "./_profile/AdsCard";

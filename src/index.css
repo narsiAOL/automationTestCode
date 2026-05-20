@@ -1,0 +1,639 @@
+@import "./styles/variables.css";
+@import "tailwindcss";
+@import "./styles/Card.css";
+@import "./styles/SearchBar.css";
+@import "./styles/Button.css";
+@import "./styles/Form.css";
+@import "./styles/EditDrawer.css";
+@import "./styles/Dashboard.css";
+/* Tailwind v4 Theme Configuration */
+@theme {
+  /* Colors mapped from design tokens */
+  --color-text-main: var(--text-main);
+  --color-text-labels: var(--text-labels);
+  --color-text-link-light: var(--text-link-light);
+  --color-text-link-blue: var(--text-link-blue);
+  --color-primary-700: var(--primary-700);
+  --color-primary-600: var(--primary-600);
+  --color-primary-500: var(--primary-500);
+  --color-primary-400: var(--primary-400);
+  --color-primary-300: var(--primary-300);
+  --color-primary-200: var(--primary-200);
+  --color-primary-100: var(--primary-100);
+  --color-border-light: var(--border-light);
+  --color-border-dark: var(--border-dark);
+  --color-background: var(--background);
+  --color-background-card: var(--background-card);
+  --color-background-surface-dark: var(--background-surface-dark);
+
+  /* Font families */
+  --font-serif: var(--font-family-serif);
+  --font-sans: var(--font-family-sans);
+
+  /* Custom fonts */
+  --font-roboto: "Roboto", sans-serif; /* For DownloadButton */
+  --font-geist: "Geist", sans-serif; /* For other headings */
+
+  /*button-text*/
+  --text-button-download: 500 16px / 100% var(--font-roboto);
+  --text-topheader-button: 400 16px / 20px var(--font-geist);
+  --text-dashboard-button: 400 16px / 20px var(--font-geist);
+  --text-edit-button: 600 16px / 20px var(--font-geist);
+
+  --text-detail-item: 400 16px / 24px var(--font-geist);
+
+  /*table-text*/
+  --text-table-header: 500 16px / 24px var(--font-geist);
+  --color-text-table-header: #ede7da;
+
+  /*song-text*/
+  --text-song-title: 500 16px / 24px var(--font-geist);
+  --text-song-album: 400 14px / 20px var(--font-geist);
+  --text-song-meta: 400 14px / 20px var(--font-geist);
+
+  /*icon-text*/
+  --text-icon-label: 400 13.55px / 17.42px var(--font-geist);
+  --text-icon-value: 600 15.48px / 23.23px var(--font-geist);
+
+  /* Typography presets - combining font-size, line-height, weight, and family */
+  --text-heading-3: var(--heading-3-weight) var(--heading-3-size) /
+    var(--heading-3-line-height) var(--heading-3-family);
+  --text-heading-4: var(--heading-4-weight) var(--heading-4-size) /
+    var(--heading-4-line-height) var(--heading-4-family);
+  --text-heading-5: var(--heading-5-weight) var(--heading-5-size) /
+    var(--heading-5-line-height) var(--heading-5-family);
+  --text-heading-6: var(--heading-6-weight) var(--heading-6-size) /
+    var(--heading-6-line-height) var(--heading-6-family);
+  --text-button: var(--button-text-weight) var(--button-text-size) /
+    var(--button-text-line-height) var(--button-text-family);
+  --text-button-large: var(--button-large-weight) var(--button-large-size) /
+    var(--button-large-line-height) var(--button-large-family);
+  --text-button-small: var(--button-small-weight) var(--button-small-size) /
+    var(--button-small-line-height) var(--button-small-family);
+  --text-label: var(--information-label-weight) var(--information-label-size) /
+    var(--information-label-line-height) var(--information-label-family);
+  --text-input: var(--input-weight) var(--input-size) / var(--input-line-height)
+    var(--input-family);
+  --text-badge: var(--badge-text-weight) var(--badge-text-size) /
+    var(--badge-text-line-height) var(--badge-text-family);
+  --text-placeholder: var(--placeholder-weight) var(--placeholder-size) /
+    var(--placeholder-line-height) var(--placeholder-family);
+  --text-body-1: var(--body-1-weight) var(--body-1-size) /
+    var(--body-1-line-height) var(--body-1-family);
+  --text-body-2: var(--body-2-weight) var(--body-2-size) /
+    var(--body-2-line-height) var(--body-2-family);
+  --text-link-button: var(--link-button-weight) var(--link-button-size) /
+    var(--link-button-line-height) var(--link-button-family);
+
+  /* Gradient backgrounds */
+  --color-gradient-bg: var(--gradient-bg);
+  --color-gradient-green: var(--gradient-green);
+  --color-gradient-golden-1: var(--gradient-golden-1);
+  --color-gradient-blue: var(--gradient-blue);
+
+  --z-index-header: 1000;
+  --z-index-dropdown: 1050;
+  --z-index-layout-design: 500;
+}
+
+/* Roboto & Geist */
+.text-button-download {
+  font: var(--text-button-download); /* Roboto 16px / 100% */
+}
+
+.text-button-topheader {
+  font: var(--text-topheader-button); /* Geist 16px / 20px */
+}
+
+.text-button-dashboard {
+  font: var(--text-dashboard-button); /* Geist 16px / 20px */
+}
+
+.text-edit-button {
+  font: var(--text-edit-button); /* Geist 16px / 20px / 600*/
+}
+
+.text-detail-item {
+  font: var(--text-detail-item);
+}
+
+.text-icon-label {
+  font: var(--text-icon-label);
+  color: #6b6150;
+}
+
+.text-icon-value {
+  font: var(--text-icon-value);
+  color: #1c1811;
+}
+
+.text-table-header {
+  font: var(--text-table-header);
+  color: var(--color-text-table-header);
+}
+
+.text-song-title {
+  font: var(--text-song-title);
+  color: var(--color-text-main);
+}
+
+.text-song-album {
+  font: var(--text-song-album);
+  /* color: var(--color-text-labels); */
+}
+
+.text-song-meta {
+  font: var(--text-song-meta);
+  color: var(--color-text-main);
+}
+
+/* text-table-cell.css */
+.text-table-cell {
+  @apply !text-[#1C1811] font-medium; /* override Tailwind color */
+  font-family: "Geist", sans-serif;
+  font-weight: 500; /* Medium */
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+/* Business Directory Mobile / Card text styling */
+.text-business-info {
+  font-family: "Geist", sans-serif; /* match desktop table */
+  font-weight: 500; /* medium */
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  font-style: normal;
+  color: #4c1d00; /* desired text color */
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* Profile Name */
+.text-profile-name {
+  font-family: var(--font-geist);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #1c1811;
+}
+@media (max-width: 768px) {
+  .text-profile-name {
+    font-size: 16px;
+  }
+}
+
+/* Profile info */
+.text-profile-info {
+  font-family: var(--font-geist);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+  color: #1c1811;
+}
+
+/* View Profile button text */
+.text-view-profile-button {
+  font-family: var(--font-roboto);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #f5f1e7;
+}
+@media (max-width: 768px) {
+  .text-view-profile-button {
+    font-size: 12px;
+  }
+}
+
+/* Family pill text */
+.text-family-pill {
+  font-family: var(--font-geist);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #3d2b1f;
+}
+
+@media (max-width: 768px) {
+  .text-song-title {
+    font: 500 0.875rem / 1.25rem var(--font-geist);
+  }
+
+  .text-song-album {
+    font: 400 0.75rem / 1rem var(--font-geist);
+  }
+
+  .text-song-meta {
+    font: 400 0.75rem / 1rem var(--font-geist);
+  }
+}
+
+@media (max-width: 768px) {
+  .text-table-header {
+    font: 500 0.875rem / 1.25rem var(--font-geist); /* 14px */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .text-button-download {
+    font: 500 0.9375rem / 1.25rem var(--font-roboto); /* ~15px */
+  }
+
+  .text-button-topheader {
+    font: 400 0.875rem / 1.125rem var(--font-geist); /* 14px */
+  }
+
+  .text-button-dashboard {
+    font: 400 0.9375rem / 1.25rem var(--font-geist); /* 15px */
+  }
+}
+
+@media (max-width: 768px) {
+  .text-button-download {
+    font: 500 0.875rem / 1.125rem var(--font-roboto); /* 14px */
+  }
+
+  .text-button-topheader {
+    font: 400 0.8125rem / 1rem var(--font-geist); /* 13px */
+  }
+
+  .text-button-dashboard {
+    font: 400 0.875rem / 1.125rem var(--font-geist); /* 14px */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-button-download {
+    font: 500 0.8125rem / 1rem var(--font-roboto); /* 13px */
+  }
+
+  .text-button-topheader {
+    font: 400 0.75rem / 0.9375rem var(--font-geist); /* 12px */
+  }
+
+  .text-button-dashboard {
+    font: 400 0.8125rem / 1rem var(--font-geist); /* 13px */
+  }
+}
+
+@media (max-width: 768px) {
+  .text-detail-item {
+    font: 400 0.875rem / 1.25rem var(--font-geist); /* 14px */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-detail-item {
+    font: 400 0.8125rem / 1.125rem var(--font-geist); /* 13px */
+  }
+}
+
+/* Typography utility classes for proper application */
+.text-button {
+  font: var(--text-button);
+}
+
+.text-button-large {
+  font: var(--text-button-large);
+}
+
+.text-button-small {
+  font: var(--text-button-small);
+}
+
+.text-heading-3 {
+  font: var(--text-heading-3);
+}
+
+.text-heading-4 {
+  font: var(--text-heading-4);
+}
+
+.text-heading-5 {
+  font: var(--text-heading-5);
+}
+
+.text-heading-6 {
+  font: var(--text-heading-6);
+}
+
+.text-label {
+  font: var(--text-label);
+}
+
+.text-input {
+  font: var(--text-input);
+}
+
+.text-badge {
+  font: var(--text-badge);
+}
+
+.text-placeholder {
+  font: var(--text-placeholder);
+}
+
+.text-body-1 {
+  font: var(--text-body-1);
+}
+
+.text-body-2 {
+  font: var(--text-body-2);
+}
+
+.text-link-button {
+  font: var(--text-link-button);
+}
+
+/* Responsive Typography for Mobile Screens */
+@media (max-width: 768px) {
+  .text-heading-3 {
+    font: 600 1.75rem / 2rem var(--font-family-serif); /* Scaled down from 36px to 28px */
+  }
+
+  .text-heading-4 {
+    font: 600 1.5rem / 1.875rem var(--font-family-serif); /* Scaled down from 32px to 24px */
+  }
+
+  .text-heading-5 {
+    font: 600 1.25rem / 1.625rem var(--font-family-serif); /* Scaled down from 24px to 20px */
+  }
+
+  .text-heading-6 {
+    font: 600 1.125rem / 1.5rem var(--font-family-serif); /* Scaled down from 20px to 18px */
+  }
+
+  .text-button-large {
+    font: 500 0.875rem / 1.25rem var(--font-family-sans); /* Scaled down from 16px to 14px */
+  }
+
+  .text-label {
+    font: 500 0.875rem / 1.25rem var(--font-family-serif); /* Scaled down from 16px to 14px */
+  }
+
+  .text-input {
+    font: 600 0.875rem / 1.25rem var(--font-family-serif); /* Scaled down from 16px to 14px */
+  }
+
+  .text-body-1 {
+    font: 500 0.875rem / 1.25rem var(--font-family-serif); /* Scaled down from 16px to 14px */
+  }
+
+  .text-body-2 {
+    font: 600 0.875rem / 1.25rem var(--font-family-serif); /* Scaled down from 16px to 14px */
+  }
+
+  .text-link-button {
+    font: 500 0.875rem / 1.125rem var(--font-family-sans); /* Scaled down from 16px to 14px */
+  }
+}
+
+/* Medium screens (768px - 1024px) - Optimized for tablets and smaller laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .text-button-large {
+    font: 500 0.9375rem / 1.375rem var(--font-family-sans); /* 15px */
+  }
+
+  .text-input {
+    font: 600 0.9375rem / 1.375rem var(--font-family-serif); /* 15px */
+  }
+
+  .text-label {
+    font: 500 0.9375rem / 1.375rem var(--font-family-serif); /* 15px */
+  }
+}
+
+/* Extra responsive adjustments for smaller mobile screens */
+@media (max-width: 480px) {
+  .text-heading-3 {
+    font: 600 1.5rem / 1.875rem var(--font-family-serif); /* Further scaled down to 24px */
+  }
+
+  .text-heading-4 {
+    font: 600 1.25rem / 1.625rem var(--font-family-serif); /* Further scaled down to 20px */
+  }
+
+  .text-heading-5 {
+    font: 600 1.125rem / 1.5rem var(--font-family-serif); /* Further scaled down to 18px */
+  }
+
+  .text-heading-6 {
+    font: 600 1rem / 1.375rem var(--font-family-serif); /* Further scaled down to 16px */
+  }
+
+  .text-button-large {
+    font: 500 0.8125rem / 1.125rem var(--font-family-sans); /* Further scaled down to 13px */
+  }
+
+  .text-input {
+    font: 600 0.8125rem / 1.125rem var(--font-family-serif); /* Further scaled down to 13px */
+  }
+}
+
+.tab-content-wrapper {
+  @apply flex flex-col items-center justify-center md:p-4 lg:p-8 gap-8 h-full;
+}
+
+/* Hide scrollbar but keep scroll functional */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom Scrollbar Styles based on Figma design */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(82, 45, 9, 0.4) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 40px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(82, 45, 9, 0.4);
+  border-radius: 40px;
+  border: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(82, 45, 9, 0.6);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
+  background-color: rgba(82, 45, 9, 0.8);
+}
+
+.custom-scrollbar::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Background / Border for tables/cards */
+.bg-border-table {
+  background-color: #dad1bc66; /* 40% opacity */
+  border: 1px solid #dad1bc66; /* optional if you want border too */
+  border-radius: 8px; /* optional, adjust to your design */
+}
+
+/* Song Details Typography */
+.song-title-text {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500; /* Medium */
+  font-style: normal; /* Medium style treated as normal */
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #674a1d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.song-artist-text {
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #674a1d;
+  opacity: 0.7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.arrow-icon {
+  @apply w-5 h-5 flex-shrink-0;
+}
+
+/* Mobile Tab Navigation Styles */
+.mobile-tab-container {
+  @apply flex items-center justify-center gap-2 w-full;
+}
+
+.mobile-tab-content {
+  @apply flex items-center justify-center flex-1 max-w-[130px];
+}
+
+.mobile-download-button {
+  @apply w-24 flex-shrink-0;
+}
+
+/* Details Card Collapsible Styles for Mobile */
+.details-card-collapsed {
+  max-height: 50% !important;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .details-card-collapsed {
+    max-height: 150px !important;
+    overflow: hidden;
+  }
+}
+
+/* Profile Cards Grid - Responsive Grid Layout */
+.profiles-grid {
+  @apply grid gap-8 w-full max-w-5xl xl:max-w-7xl mx-auto;
+  grid-template-columns: repeat(4, minmax(260px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  align-items: start;
+}
+
+.profiles-grid > * {
+  width: 100%;
+  max-width: 420px;
+  justify-self: center;
+}
+
+@media (max-width: 1280px) {
+  .profiles-grid {
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .profiles-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .profiles-grid {
+    gap: 12px;
+  }
+}
+
+/* Songs Grid - Responsive Grid Layout for Song Cards */
+.songs-grid {
+  @apply grid gap-6 w-full max-w-6xl mx-auto;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  .songs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .songs-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
+/* Dropdown utilities */
+.dropdown-z-index {
+  z-index: var(--z-index-dropdown);
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.react-flow__handle {
+  background: #733e0a !important;
+  border: 1px solid #733e0a !important;
+  width: 5px !important;
+  height: 5px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+}
+
+.react-flow__handle.spouse-hidden-handle {
+  background: transparent !important;
+  border: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}

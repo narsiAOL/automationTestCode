@@ -1,0 +1,53 @@
+{
+  "name": "family-tree",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host=0.0.0.0 --port 5549",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "sync:figma": "node ./scripts/sync-figma.mjs"
+  },
+  "dependencies": {
+    "@dabeng/react-orgchart": "^1.0.3",
+    "@modelcontextprotocol/sdk": "^1.18.0",
+    "@tailwindcss/vite": "^4.1.13",
+    "@tanstack/react-table": "^8.21.3",
+    "@types/react-router-dom": "^5.3.3",
+    "@xyflow/react": "^12.8.5",
+    "axios": "^1.12.2",
+    "entitree-flex": "^0.4.1",
+    "i18next": "^25.5.2",
+    "i18next-browser-languagedetector": "^8.2.0",
+    "lucide": "^1.3.0",
+    "lucide-react": "^1.9.0",
+    "react": "^19.1.1",
+    "react-d3-tree": "^3.6.6",
+    "react-dom": "^19.1.1",
+    "react-h5-audio-player": "^3.10.1",
+    "react-i18next": "^15.7.3",
+    "react-icons": "^5.6.0",
+    "react-router-dom": "^7.9.1",
+    "react-zoom-pan-pinch": "^3.7.0",
+    "reactflow": "^11.11.4",
+    "sonner": "^2.0.7",
+    "tailwindcss": "^4.1.13"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.0",
+    "eslint": "^9.33.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.39.1",
+    "vite": "^7.1.2",
+    "vite-plugin-pwa": "^1.0.3",
+    "vite-plugin-svgr": "^4.5.0"
+  }
+}
